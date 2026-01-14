@@ -10,13 +10,16 @@ runcmd:
   - sudo apt install -y \
     git \
     bat \
+    wget \
     nodejs \
     npm \
     python3-pip \
-    python3.12-venv \
+    python3-venv \
     python-is-python3 \
-    neofetch \
-    asciinema
+    fastfetch \
+    asciinema \
+
+  # TODO: add installs for gemini, claude, jules
 
   # LaTeX
   - sudo apt install -y \
