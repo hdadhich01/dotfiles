@@ -19,7 +19,7 @@ runcmd:
     fastfetch \
     asciinema \
 
-  # TODO: add installs for gemini, claude, jules
+  # TODO: add installs for gemini, claude, jules?
 
   # LaTeX
   - sudo apt install -y \
@@ -34,7 +34,7 @@ runcmd:
 
   # global python installs
   - pip install setuptools --break-system-packages
-  - pip install pipreqs pre-commit --break-system-packages
+  - pip install pipreqs pre-commit ipykernel --break-system-packages
 
   # clean up
   - sudo apt clean && sudo apt autoclean
