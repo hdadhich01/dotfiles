@@ -2,9 +2,7 @@
 
 runcmd:
   - cd ~ && rm -rf .ssh && mac pull ~/.ssh
-
-  # update
-  - sudo apt update
+  - sudo apt update && sudo apt upgrade -y
 
   # general
   - sudo apt install -y \
@@ -37,4 +35,5 @@ runcmd:
   - pip install pipreqs pre-commit ipykernel --break-system-packages
 
   # clean up
+  - sudo apt update && sudo apt upgrade -y
   - sudo apt clean && sudo apt autoclean
